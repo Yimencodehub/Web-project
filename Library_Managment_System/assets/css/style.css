@@ -1,0 +1,76 @@
+/* Dark & Light Theme System for Library Management System */
+:root {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-card: rgba(30, 41, 59, 0.85);
+  --sidebar-bg: #111827;
+  --header-bg: #1e293b;
+  --accent-primary: #4f46e5;
+  --accent-secondary: #7c3aed;
+  --accent-amber: #f59e0b;
+  --accent-green: #10b981;
+  --accent-red: #ef4444;
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --border: rgba(255, 255, 255, 0.08);
+  --input-bg: #0f172a;
+  --table-hover: rgba(255, 255, 255, 0.03);
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="light"] {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --bg-card: #ffffff;
+  --sidebar-bg: #ffffff;
+  --header-bg: #ffffff;
+  --accent-primary: #4f46e5;
+  --accent-secondary: #7c3aed;
+  --accent-amber: #d97706;
+  --accent-green: #059669;
+  --accent-red: #dc2626;
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+  --border: #e2e8f0;
+  --input-bg: #f1f5f9;
+  --table-hover: #f1f5f9;
+  --shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Theme Toggle Button Style */
+.theme-toggle-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+.theme-toggle-btn:hover {
+  background: var(--accent-primary);
+  color: white;
+}
+
+/* User Avatar Image Style */
+.user-avatar-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-primary);
+}
+
+.avatar-large {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent-primary);
+  box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+}
